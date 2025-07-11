@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🍉 WHG</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet" />
+    <script defer src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api/dist/face-api.min.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="main-content">
+      <header>
+        <h1>The Watermelon Helmet Generator</h1>
+      </header>
+      <input type="text" id="nameInput" placeholder="Enter your name" />
+      <p>Now, upload a photo of a single face</p>
+      <input type="file" id="upload" accept="image/*" />
+      <!-- <div class="button-group">
+        <button onclick="drawHelmet()">Get Helmeted!</button>
+      </div> -->
+      <canvas id="canvas" width="450" height="450"></canvas>
+    </div>
+
+    <div class="button-group">
+      <button onclick="downloadImage()">Download Image</button>
+    </div>
+
+    <footer>
+      <p></p>
+      <br />
+      <img src="HoP_LogoSmall.png" alt="House of Plough" class="footer-image" />
+      <p>&copy; 2025 House of Plough</p>
+    </footer>
+  </body>
+</html>
